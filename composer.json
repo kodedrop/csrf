@@ -1,0 +1,25 @@
+{
+  "name": "kodedrop/csrf",
+  "description": "A simple hello world composer package",
+  "description": "Csrf In PHP",
+  "keywords": [
+    "php csrf",
+    "kodedrop csrf",
+    "kodedrop"
+  ],
+  "homepage": "https://kodedrop.com/package/csrf",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "kodedrop.com",
+      "email": "info@kodedrop.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "Kodedrop\\": "src/"
+    }
+  },
+  "require": {}
+}
