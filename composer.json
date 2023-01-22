@@ -3,8 +3,8 @@
   "description": "A simple hello world composer package",
   "description": "Csrf In PHP",
   "keywords": [
-    "php csrf",
-    "kodedrop csrf",
+    "phpcsrf",
+    "kodedropcsrf",
     "kodedrop"
   ],
   "homepage": "https://kodedrop.com/package/csrf",
@@ -27,7 +27,5 @@
   },
   "require": {
     "php": "^5.6 || ^7.0 || ~8.0.0 || ~8.1.0 || ~8.2.0"
-  },
-  "prefer-stable": true,
-  "minimum-stability": "stable"
+  }
 }
