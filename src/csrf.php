@@ -6,14 +6,14 @@ namespace Kodedrop;
 class CSRF
 {
     private $TokenName;
-    public function Create(): string
+    public function Createtoken(): string
     {
         $this->TokenName = "KODEDROP_CSRF";
         $Token = base64_encode(uniqid());
         setcookie($this->TokenName, $Token, null, '/');
         return $Token;
     }
-    public function Check($FormToken): bool
+    public function CheckToken($FormToken): bool
     {
         $this->TokenName = "KODEDROP_CSRF";
         $veri = false;
@@ -27,5 +27,14 @@ class CSRF
             $veri = false;
         }
         return $veri;
+    }
+
+    public static function Create()
+    {
+        return (new self)->Createtoken();
+    }
+    public static function Check($FormToken)
+    {
+        return (new self)->CheckToken($FormToken);
     }
 }
